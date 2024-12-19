@@ -1,0 +1,21 @@
+services:
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    # image: node:18
+    working_dir: /workspace/server/
+    command: npm start
+    ports:
+      - "3000:3000" # Adjust port as needed
+
+    
+  web-app:
+    build:
+      context: ./web-app
+      dockerfile: Dockerfile
+    # image: node:18
+    working_dir: /workspace/web-app/
+    command: npm start
+    ports:
+      - "8080:8080" # Adjust port as needed

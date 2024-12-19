@@ -1,0 +1,7 @@
+{
+    "name": "WebApp",
+    "dockerComposeFile": ["../../docker-compose.yml"],
+    "service": "web-app",
+    "shutdownAction": "none",
+    "workspaceFolder": "/workspace/web-app"
+}
